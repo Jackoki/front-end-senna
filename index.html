@@ -7,36 +7,87 @@
 	<title>Site Ayrton Senna</title>
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 	<header>
 		<div class="top-container">
-			<div class="row">
-				<div class="col-md-4"> 
-					<img id="Logotipo" src="img/senna-logo.png" alt="Logotipo">
-				</div>
-
-				<div class="col-md-8">
-					<nav id="menu" class="pull-right">
-						<ul>
-							<li><a href="#">Biografia</a></li>
-							<li><a href="#">Conquistas</a></li>
-							<li><a href="#">Fora das pistas</a></li>
-							<li><a href="#">Galeria</a></li>
-							<li>
-								<input type="search" name="busca...">
-							</li>
-						</ul>
-					</nav>
-				</div>
+			<div class="col-md-4 green-background"> 
+				<img id="Logotipo" src="img/senna-logo.png" alt="Logotipo">
 			</div>
-  		</div>
+
+			<div class="col-md-8 menu-container">
+				<nav id="menu" class="pull-right">
+					<ul>
+						<li><a href="#">Biografia</a></li>
+						<li><a href="#">Conquistas</a></li>
+						<li><a href="#">Fora das pistas</a></li>
+						<li><a href="#">Galeria</a></li>
+						<li>
+							<input type="search" name="busca...">
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</header>
 
 	<section>
 		<div id="banner">
 			<img id="Fundo" src="img/senna-fundo.jpg" alt="Fundo">
 		</div>
+
+		<div id="fotos" class="container">
+			<div class="row">
+				<h2>MOMENTOS ICÔNICOS</h2>
+				<hr>
+			</div>
+
+			<div class="row thumbnails">
+				<div class="col-md-3">
+					<img src="img/senna-estoril.jpg" alt="Estoril">
+					<h3>A primeira vitória de Senna na Formula 1, Estoril-Portugal</h3>
+					<time>21 de abril de 1985</time>
+				</div>
+
+				<div class="col-md-3">
+					<img src="img/senna-1988.jpg" alt="Estoril">
+					<h3>Conquista do título mundial de Formula 1 em 1988, Suzuka-Japão</h3>
+					<time>30 de outubro de 1988</time>
+				</div>
+
+				<div class="col-md-3">
+					<img src="img/senna-1991.jpg" alt="Estoril">
+					<h3>Primeira vitória de Senna no Brasil, São Paulo-Brasil</h3>
+					<time>24 de março de 1991</time>
+				</div>
+
+				<div class="col-md-3">
+					<img src="img/senna-monaco.jpg" alt="Estoril">
+					<h3>Ayrton Senna se torna o maior vencedor no GP de Mônaco, Monaco-Ville-Mônaco</h3>
+					<time>23 de maio de 1993</time>
+				</div>
+			</div>
+		</div>
+
+		<div id="estatisticas">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 margem-direita"> 
+						<p>3<i class="fa-solid fa-trophy"></i><small>Títulos Mundiais</small></p>
+					</div>
+
+					<div class="col-md-4 margem-direita"> 
+						<p>41<i class="fa-solid fa-flag-checkered"></i><small>Vitórias</small></p>
+					</div>
+
+					<div class="col-md-4 margem-direita"> 
+						<p>65<i class="fa-regular fa-clock"></i><small>Pole positions</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 	<script src="lib/jquery/jquery.min.js"></script>
