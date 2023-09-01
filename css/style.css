@@ -10,6 +10,18 @@
 	font-size: 1em;
 }
 
+@font-face {
+	font-family: 'Josefin';
+	src: url("../fonts/Josefin/JosefinSans-Regular.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family: 'Josefin-Bold';
+	src: url("../fonts/Josefin/JosefinSans-Bold.ttf");
+	font-size: 1em;
+}
+
 header {
 	position: fixed;
 	width: 100%;
@@ -95,17 +107,17 @@ header {
 }
 
 #banner .texto h1 {
+	font-family: OpenSans;
 	font-size: 120px;
     color: #FFDF00;
     text-shadow: 2px 2px 4px blacK;
-    -webkit-text-stroke: 3px green;
 }
 
 #banner .texto h2 {
 	font-size: 40px;
     color: #FFDF00;
     text-shadow: 2px 2px 4px blacK;
-    -webkit-text-stroke: 2px green;
+    -webkit-text-stroke: 0.5px green;
 }
 
 
@@ -194,8 +206,48 @@ header {
     -webkit-text-stroke: 1.25px black;
 }
 
+.banner video {
+    width: 100%;
+    height: auto;
+    filter: blur(10px);
+}
+
+.texto {
+	color: #ffffff;
+    position: absolute;
+    top: 150vw;
+    text-align: -webkit-center;
+}
+
+.texto h1{
+	font-family: Josefin;
+    position: relative;
+    text-align: -webkit-center;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    -webkit-text-stroke: 0.2px black;
+}
+
+.texto h2{
+	font-family: OpenSans;
+	margin-top: 0.5vw;
+	font-size: 32px;
+	-webkit-text-stroke: 0.3px black;
+}
+
+.botao-clique {
+	margin-top: 3vh;
+	background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    width: 250px;
+    height: 70px;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
 footer {
-    margin-top: 110px;
+    margin-top: 40px;
 }
 
 footer .row p {
@@ -385,6 +437,42 @@ footer .list-socials i {
     text-shadow: 2px 2px 4px blacK;
     -webkit-text-stroke: 2px green;
 }
+
+.texto {
+	color: #ffffff;
+    position: absolute;
+    top: 130vw;
+    text-align: -webkit-center;
+    margin-left: 10vw;
+}
+
+.texto h1{
+	font-family: Josefin;
+    position: relative;
+    text-align: -webkit-center;
+    font-size: 160px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    -webkit-text-stroke: 0.2px black;
+}
+
+.texto h2{
+	font-family: OpenSans;
+	margin-top: 2vw;
+	font-size: 32px;
+	-webkit-text-stroke: 0.3px black;
+}
+
+.botao-clique {
+	margin-top: 6vh;
+	background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    width: 250px;
+    height: 70px;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
 
 }
 
