@@ -23,79 +23,60 @@
 }
 
 header {
+	background-color: rgba(255, 223, 0, 1);
+	box-shadow: 0px 3px 10px black;
 	position: fixed;
+	z-index: 100;
 	width: 100%;
-	height: 8vh;
-	background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 6rem;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+#Logo {
+	max-width: 8.5vw;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+}
+
+.nav-list ul{
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	z-index: 100;
+	list-style: none;
 }
 
-.green-background {
-	top: 0px;
-	left: 0px;
-	background-color: rgba(0, 128, 0, 0.9);
-	height: 10vh;
-	display: flex;
-	align-items: center;
-	position: absolute;
+.nav-item {
+	margin: 0 15px;
 }
 
-#Logotipo {
-	margin-left: 13vw;
-	width: 5vw;
-	max-width: 85px;
-	max-height: 9vh;
-	position: absolute;
-}
-
-.menu-container {
-	top: 0px;
-	left: 33vw;
-	background-color: rgba(255, 223, 0, 0.93);
-	height: 10vh;
-	display: flex;
-	align-items: center;
-	position: absolute;
-}
-
-#menu ul{
-	display: flex;
-	margin: 0;
-}
-
-#menu li{
-	margin-top: 2vh;
-	margin-left: 3vw;
-	display: flex;
-	font-family: "OpenSans";
-}
-
-#menu li a{
+.nav-link {
+	font-family: OpenSans;
 	text-decoration: none;
-	color: #009c3b;
-	font-weight: bold;
-	font-size: 1.2em;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	font-size: 1.7em;
+	color: #008000;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-.menu-container input[type="search"] {
-  margin-left: 5vw;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-
-  outline: none;
-  border-color: #009c3b;
-  box-shadow: 0 0 5px rgba(0, 156, 59, 0.5);
+.search-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #Fundo{
 	width: 100%;
 	height: 120vh;
-	position: relative;
 	z-index: 80;
 }
 
@@ -124,14 +105,14 @@ header {
 #fotos h2 {
 	color: #008000;
 	font-family: 'OpenSans';
-	font-size: 36px;
+	font-size: 2vw;
 	text-align: center;
 	margin-top: 4vh;
 }
 
 #fotos hr {
 	border:#FFDF00 solid 2px;
-	width: 350px;
+	width: 25%;
 	margin: 0 auto;
 }
 
@@ -215,7 +196,7 @@ header {
 .texto {
 	color: #ffffff;
     position: absolute;
-    top: 150vw;
+    top: 300vh;
     text-align: -webkit-center;
 }
 
@@ -374,7 +355,237 @@ footer .list-socials i {
     max-height: 120px;
 }
 
-@media (min-width: 1380px) {
+@media screen and (max-width: 320px) {
+header {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: 12vh;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	padding: 3px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+#Logo {
+	max-width: 12vw;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+}
+
+.nav-list ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+
+.nav-link {
+	font-size: 1em;
+}
+
+.search-bar input[type="text"] {
+    width: 2vw;
+}
+
+#Fundo{
+	height: 50vh;
+}
+
+#banner .texto {
+    top: 25vh;
+    left: 3vw;
+    margin-left: 0px;
+}
+
+#banner .texto h1 {
+	font-size: 32px;
+}
+
+#banner .texto h2 {
+	font-size: 10px;
+}
+
+.thumbnails img{
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 120px;
+	max-height: 120px;
+	border: 2px solid #ccc;
+}
+
+#fotos .thumbnails h3 {
+	color: #0055A4;
+	font-size: 10px;
+	font-family: 'OpenSans';
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+#fotos .thumbnails time {
+	color: #008000;
+	font-size: 8px;
+	font-family: 'OpenSans-Light';
+	margin-left: 20px;
+}
+
+#fotos h2 {
+	font-size: 4vw;
+}
+
+
+.call img{
+	width: 250px;
+	max-width: 250px;
+	height: 250px;
+	max-height: 250px;
+	border: 2px solid #ccc;
+	margin: 2vw;
+}
+
+
+.cont h4 {
+    position: relative;
+    text-align: center;
+    bottom: 4.5vw;
+    left: 1.7vw;
+    color: #008000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    -webkit-text-stroke: 0.6px black;
+}
+
+#estatisticas {
+	height: 37vh;
+}
+
+#estatisticas p {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 3.5vw;
+}
+
+#estatisticas p small {
+	font-size: 8px;
+}
+
+.texto {
+	color: #ffffff;
+    position: absolute;
+    top: 360vh;
+    text-align: -webkit-center;
+    margin-left: 2vw;
+}
+
+.texto h1{
+	font-family: Josefin;
+    position: relative;
+    text-align: -webkit-center;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    -webkit-text-stroke: 0.2px black;
+}
+
+.texto h2{
+	font-family: OpenSans;
+	margin-top: 2vh;
+	font-size: 10px;
+	-webkit-text-stroke: 0.3px black;
+}
+
+.call {
+	margin-top: 10vh;
+}
+
+.call img{
+	margin-bottom: 4vh;
+	width: 280px;
+	max-width: 280px;
+	height: 280px;
+	max-height: 280px;
+	border: 2px solid #ccc;
+}
+
+
+.cont h4 {
+	bottom: 72px;
+	font-size: 24px;
+}
+
+.botao-clique {
+	margin-top: 2vh;
+    width: 60px;
+    height: 40px;
+    font-size: 8px;
+}
+
+}
+
+
+
+@media screen and (min-width: 2560px) {
+
+header {
+	background-color: rgba(255, 223, 0, 1);
+	box-shadow: 0px 3px 10px black;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 6rem;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+#Logo {
+	max-width: 6.5vw;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+}
+
+.nav-list ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.nav-item {
+	margin: 0 2em;
+}
+
+.nav-link {
+	font-family: OpenSans;
+	text-decoration: none;
+	font-size: 2.6em;
+	color: #008000;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.search-bar input[type="text"] {
+    width: 8vw;
+}
 
 #Fundo{
 	width: 100%;
@@ -441,7 +652,7 @@ footer .list-socials i {
 .texto {
 	color: #ffffff;
     position: absolute;
-    top: 130vw;
+    top: 330vh;
     text-align: -webkit-center;
     margin-left: 10vw;
 }
@@ -457,7 +668,7 @@ footer .list-socials i {
 
 .texto h2{
 	font-family: OpenSans;
-	margin-top: 2vw;
+	margin-top: 2vh;
 	font-size: 32px;
 	-webkit-text-stroke: 0.3px black;
 }
